@@ -14,6 +14,49 @@ p {
   font-size: 30px;
 }
 
+.head-row {
+  display: flex;
+  justify-content: flex-start;
+  background: grey;
+  color: white;
+  margin: 0 10px;
+}
+
+.head-row div {
+  padding: 10px;
+  width: 18%;
+  text-align: left;
+}
+
+.head-row div.delete-col {
+  width: 10%;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+
+.contact div {
+  padding: 10px;
+  width: 18%;
+  text-align: left;
+  border: 1px solid grey;
+}
+
+.contact div.delete-col {
+  background: red;
+  color: white;
+  width: 10%;
+  cursor: pointer;
+}
+
+.contact div.delete-col:hover {
+  background: darkred;
+}
+
 #doge-image img {
   height: 140px;
   margin-top: 20px;

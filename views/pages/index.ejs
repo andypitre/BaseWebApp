@@ -5,21 +5,71 @@
 
 <body>
 
-  <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
-  <!-- Check out more components here: http://getbootstrap.com/components/ -->
-  <div class="page-header">
-    <h1>YOYO web apps are so cool.</h1>
-  </div>
+<h1>This is my web app</h1>
 
-  <p id="demo">
-    This is me testing out a lil html file
-  </p>
+<button id="login-button" class="btn btn-default" type="button" onclick="toggleSignIn()">
+  Sign in to view your contacts
+</button>
 
-  <button class="btn btn-default" type="button" onclick="myFunction()">
-    Try it
-  </button>
+<section id="add-post">
+  <h2 class="mdl-card__title-text">
+    New Contact
+  </h2>
 
-  <div id="doge-image"/>
+  <form id="message-form" action="#">
+    <div class="form-group">
+      <label for="new-post-title">
+        First name
+      </label>
+      <input type="text" id="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="new-post-title">
+        Last name
+      </label>
+      <input type="text" id="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="new-post-title">
+        Email
+      </label>
+      <input type="text" id="emailAddress">
+    </div>
+
+    <div class="form-group">
+      <label for="new-post-title">
+        Phone number
+      </label>
+      <input type="text" id="phoneNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="new-post-body">
+        Notes
+      </label>
+      <textarea rows="3" id="newNote"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-default" onclick="handleMessageFormSubmit();">
+      Add contact
+    </button>
+  </form>
+</section>
+
+<div class="head-row">
+  <div class="first-name">First Name</div>
+  <div class="last-name">Last Name</div>
+  <div class="phone-number">Phone Number</div>
+  <div class="email-address">Email Address</div>
+  <div class="new-note">Notes</div>
+  <div class="delete-col">Delete</div>
+</div>
+
+<div id="contacts">
+  Your Contacts
+</div>
 
 </body>
 

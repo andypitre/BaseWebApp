@@ -1,5 +1,6 @@
 <meta charset="UTF-8">
 <title>Base Web App</title>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
 <!-- First we import our css files -->
@@ -23,6 +24,21 @@
 
 <!-- then bootstrap -->
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!-- Now everything we'll need to use firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyATn2ieC5EMG6mys2YYm66LFvr7vTihaLk",
+    authDomain: "databasewebapp.firebaseapp.com",
+    databaseURL: "https://databasewebapp.firebaseio.com",
+    projectId: "databasewebapp",
+    storageBucket: "databasewebapp.appspot.com",
+    messagingSenderId: "777915119440"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <!-- then our app's own js file -->
 <script src="/js/main.js"></script>
