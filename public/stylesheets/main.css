@@ -14,6 +14,16 @@ p {
   font-size: 30px;
 }
 
+label {
+  width: 130px;
+  text-align: left;
+  vertical-align: top;
+}
+
+input, textarea {
+    width: 200px;
+}
+
 .head-row {
   display: flex;
   justify-content: flex-start;
